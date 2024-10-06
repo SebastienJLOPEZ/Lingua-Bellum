@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resultat Joueur</title>
+		<meta charset="utf-8">
+		<style>
+        body {
+            background-image: url("livre_résutat.png");
+            background-size: 1400px 800px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-color: #000000;
+            }
+        </style>
+	</head>
+	<body>
+
+	<div style="position: absolute; left: 800px; color: #fffacd">
+		<h2>Resultats</h2>
+	</div>	
+		<p>
+	<div style="position: absolute; top: 150px; left: 800px; color: #fffacd">
+
+			<form class="" action="" method="get">
+				{{joueurG | safe}} a gagné ! <br \>
+			Score : {{ scoreG | safe }} <br \>
+	</div>
+	<div style="position: absolute; top: 300px; left: 800px; color: #7FFFD4">
+
+			<form class="" action"" method="get">
+				Score de {{joueurP | safe}} : {{ scoreP | safe }} <br \>
+			</form>
+		</p>
+		</div>
+		<div style="position: absolute; top: 700px; left: 300px">
+		<a href="/req_commencer"><button>Rejouer</button></a>
+		</div>
+		<div style="position: absolute; top: 700px; left: 1500px">
+		<a href="/"><button>Accueil</button></a>
+		</div>
+	</body>
+</html>

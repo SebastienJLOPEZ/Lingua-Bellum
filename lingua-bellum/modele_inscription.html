@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulaire inscription</title>
+		<meta charset="utf-8">
+		<style>
+        body {
+            background-image: url("fondecran_inscription.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="position: absolute; left: 500px; top: 200px; height: 200px; color: #FFFFFF">
+			<h2>Création de votre compte</h2>
+
+			<form action="/req_inscrire" method="GET">
+
+				{{ erreur | safe }}
+				<br />
+				<label>Pseudo :</label>
+				<input type="text" name="pseudo" value="">
+				<br/>
+				<a style="color: #FFFFFF;" href= "/">RETOUR</a>
+				<button name="action" value="Confirmer">Créer compte</button>
+			</form>
+		</div>
+	</body>
+</html>

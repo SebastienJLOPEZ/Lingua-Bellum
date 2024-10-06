@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choix de l'ordre de jeu</title>
+		<meta charset="utf-8">
+		<style>
+       		html, body {
+         		height: 100%;
+           		display: flex;
+           		flex-direction: row;
+        	}
+
+        	body {
+           		background-image: url("image_jeu.jpg");
+           		background-size: cover;
+           		background-repeat: no-repeat;
+           		background-position: center;
+        	    background-color: #000000;
+        	}
+        	.pseudoA {
+           		 padding-top: 5%;
+          	 	 display: flex;
+         	  	 flex-direction: column;
+           		 flex-grow: 1;
+				 text-align: center;
+			}
+			.pseudoB {
+                 padding-top: 5%;
+                 display: flex;
+                 flex-direction: column;
+                 flex-grow: 1;
+				 text-align: center;
+        	}
+        	.action {
+           		display: flex;
+           		flex-direction: column;
+           		flex-grow: 3;
+           		text-align: center;
+        	}
+
+		</style>
+	</head>
+	<body style="width: 100%">
+		<form class="" action="/req_soumettre" method="get" style="display: flex; flex-direction: row; width : 100%">
+
+		<div class="pseudoA">
+				<button type="submit" name="choix" value="0"> {{ joueurA }} </button>
+
+		</div>
+		<div class="action">
+
+				<h2>Qui joue en premier ?</h2><br>
+
+				<p style="padding-top: 15%; color: #ffffff">Choisissez votre type de rimes :<br>
+				<br>
+				<input type="radio" name="typeRimes" value="0">Rimes libres
+				<input type="radio" name="typeRimes" value="1">Rimes fixes
+				<input type="radio" name="typeRimes" value="2">Rimes au hasard
+				<br>
+				</p>
+				<p style="padding-top: 17.5%; color: #ffffff">Choisissez vos bonus : <br>
+				<br>
+				<input type="checkbox" name="bonus" value="0">Alexandrin
+				<input type="checkbox" name="bonus" value="1">quatrain</p>
+
+		</div>
+		<div class="pseudoB">
+
+				<button type="submit" name="choix" value="1"> {{ joueurB }} </button>
+		</div>
+	</form>
+
+	</body>
+</html>
